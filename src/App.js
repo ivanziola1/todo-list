@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component} from 'react'
 import Header from './components/Header'
 import TodoItem from './components/TodoItem'
 import itemsData from './itemsData'
@@ -6,7 +6,7 @@ import itemsData from './itemsData'
 import './Header.css'
 import './App.css'
 
-class App extends React.Component {
+class App extends Component {
   
   render(){
     const todoItems = itemsData.map((item) => <TodoItem item={item} key={item.id}/>)

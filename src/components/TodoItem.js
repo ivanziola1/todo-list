@@ -1,6 +1,6 @@
-import React from "react"
+import React, {Component} from "react"
 
-class TodoItem extends React.Component {
+class TodoItem extends Component {
   render(){
     return(
       <div className="todo-item">
