@@ -7,9 +7,13 @@ import './Header.css'
 import './App.css'
 
 class App extends Component {
+  constructor(){
+    super()
+    this.state = { items: itemsData }
+  }
   
   render(){
-    const todoItems = itemsData.map((item) => <TodoItem item={item} key={item.id}/>)
+    const todoItems = this.state.items.map((item) => <TodoItem item={item} key={item.id}/>)
 
     return (
       <div className="App">
