@@ -1,9 +1,9 @@
 import React from "react"
 
-function TodoItem(props){
+const TodoItem = (props) => {
   return(
     <div className="todo-item">
-       <input type="checkbox" />
+       <input type="checkbox" defaultChecked={props.item.completed} />
        <p>{props.item.name}</p>
     </div>
   )

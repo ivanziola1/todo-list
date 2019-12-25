@@ -1,25 +1,20 @@
 import React from 'react'
 import Header from './components/Header'
-import './App.css'
 import TodoItem from './components/TodoItem'
+import itemsData from './itemsData'
+
 import './Header.css'
+import './App.css'
 
 function App() {
-  const items = [
-    { name: 'First Item' },
-    { name: 'Second Item' },
-    { name: 'Third Item' },
-    { name: 'Fourth Item' },
-    { name: 'Fifth Item' },
-    { name: 'Other' }
-  ]
-
+  const todoItems = itemsData.map((item) => <TodoItem item={item} key={item.id}/>)
+  
   return (
     <div className="App">
       <Header/>
       
       <div className="todo-list">
-        {items.map((item) => <TodoItem item={item}/>)}
+        {todoItems}
       </div>
     </div>
   );
