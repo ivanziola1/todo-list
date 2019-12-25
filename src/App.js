@@ -1,7 +1,8 @@
-import React from 'react';
+import React from 'react'
 import Header from './components/Header'
-import './App.css';
-import TodoItem from './components/TodoItem';
+import './App.css'
+import TodoItem from './components/TodoItem'
+import './Header.css'
 
 function App() {
   return (
