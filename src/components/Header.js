@@ -1,9 +1,12 @@
 import React from "react"
-function Header(){
-  return(
-    <header className="app-header">
-      <h1>Todo list</h1>
-    </header>
-  )
+
+class Header extends React.Component {
+  render(){
+    return(
+      <header className="app-header">
+        <h1>Todo list</h1>
+      </header>
+    )
+  }
 }
 export default Header
