@@ -11,8 +11,8 @@ class TodoItem extends Component {
 
     return(
       <div className="todo-item">
-         <input type="checkbox" checked={this.props.item.completed} onChange={() => this.props.changeHandler(this.props.item.id)}/>
-         <p style={this.props.item.completed ? completeStyles : null}>{this.props.item.name}</p>
+         <input type="checkbox" checked={this.props.item.completed} id={this.props.item.id} onChange={() => this.props.changeHandler(this.props.item.id)}/>
+         <label style={this.props.item.completed ? completeStyles : null} for={this.props.item.id}>{this.props.item.name}</label>
       </div>
     )
   }
